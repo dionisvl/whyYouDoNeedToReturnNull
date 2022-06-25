@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+    php-fpm:
+        build:
+            context: app/docker
+            dockerfile: php-fpm/Dockerfile
+        volumes:
+            - ./app:/home/parser
